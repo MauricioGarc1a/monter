@@ -60,7 +60,8 @@ Candy.Game.prototype =
 
     if(!Candy._health)
     {
-        this.add.sprite((Candy.GAME_WIDTH-594)/2, (Candy.GAME_HEIGHT-271)/2, 'game-over');
+      this.add.sprite((Candy.GAME_WIDTH-594)/2, (Candy.GAME_HEIGHT-271)/2, 'game-over');
+      this.game.paused = true;
     }
   }
 };
